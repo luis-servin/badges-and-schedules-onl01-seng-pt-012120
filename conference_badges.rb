@@ -1,19 +1,25 @@
-require "pry"
 
-attendees = ["Edsgar", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
+
+people = ["Edsgar", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 
 def badge_maker(name)
   "Hello, my name is #{name}."
 end
 
-def batch_badge_creator(attendees)
-  attendees.map do |attendee|
-    "Hello, my name is #{attendee}."
+def batch_badge_creator(array)
+  newarray = []
+  array.each do |name|
+    newarray.push("Hello, my name is #{attendee}.")
   end 
+  return newarray
 end
 
-def assign_rooms(attendees).each do |person|
-  puts person
+def assign_rooms(array)
+  newarray = []
+  counter = 1 
+  array.each do |name|
+    newarray.push("Hello, #{name}! You'll be assigned to room #{counter}!")
+    #{counter}
   end
 end
 
