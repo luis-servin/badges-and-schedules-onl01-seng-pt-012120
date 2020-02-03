@@ -21,11 +21,11 @@ def assign_rooms(array)
     newarray.push("Hello, #{name}! You'll be assigned to room #{counter}!")
     counter += 1 
   end
+  return newarray
 end
 
-def printer(attendees)
-  batch_badge_creator(attendees).each do |badge|
-    puts badge
+def printer(array)
+  batch_badge_creator(array).each do |id|
+    puts id
   end
-
 end
